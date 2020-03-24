@@ -7,7 +7,7 @@ class Expence(models.Model):
     amount = models.BigIntegerField()
     user = models.ForeignKey(User,on_delete=models.DO_NOTHING)
     date = models.DateTimeField()
-class Income(model.Model):
+class Income(models.Model):
     text = models.CharField(max_length=255)
     amount = models.BigIntegerField()
     user = models.ForeignKey(User,on_delete=models.DO_NOTHING)
